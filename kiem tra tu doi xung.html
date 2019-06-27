@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function isPalindrome(s) {
+            if (s[0]!==s[s.length-1]) return false;
+            if (s.length>2) isPalindrome(s.slice(1,s.length-1));
+            return true;
+        }
+        alert(isPalindrome(prompt("Nhap chuoi can kiem tra: ")));
+    </script>
+</body>
+</html>
